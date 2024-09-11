@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+    overflow: hidden;
+    background-color:lightslategrey;
+}
+
+li {
+    margin: 5px;
+    display: inline;
+    float: left;
+}
+
+
+a{
+    margin: 5px;
+   display: block; 
+   padding : 8px;
+   background-color: black;
+}
+
+li a{
+display: block;
+color: red;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover {
+    background-color: yellow;
+  }
+
+.active{
+    background-color: pink;
+}
+/* 
+.logo{
+    display: flex;
+    text-align: right;
+    float: right;
+    background-color: pink;
+} */
+
+.logo{
+    margin: 5px;
+    height: 44px;
+    width: 55px;
+    border-radius: 50%;
+}
+
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.name{
+    text-align: center;
+}
+
+.head_name{
+    text-align: center;
+    color: aqua;
+}
+
+/* Crousle  */
+
+
+.carousel-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.active {
+    opacity: 1;
+}
+
+.carousel-slide:not(.active) {
+    opacity: 0;
+    pointer-events: none;
+}

@@ -1,0 +1,32 @@
+#container{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    position: absolute;
+    animation-name: ghumjao;
+    animation-duration: 5s;
+    border-radius: 50%;
+}
+
+@keyframes ghumjao {
+    0%{
+        top: 0;
+        left: 0;
+        background-color: blue;
+    }
+    25%{
+        top: 0;
+        left: 75%;
+        background-color: yellow;
+    }
+    50%{
+        top: 75%;
+        left: 75%;
+        background-color: red;
+
+    }
+    100%{
+        top: 75%;
+        left: 0;
+    }
+}

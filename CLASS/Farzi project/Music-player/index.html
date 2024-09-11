@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/2616bc9d69.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <video id="background-video" autoplay muted loop>
+        <source src="./Assests/belle-lofi-girl-zenless-zone-zero-moewalls-com.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <section id="container">
+        <h1 style="color: yellow;">MUSIC PLAYER</h1>
+        <h5 style="color: yellow;">Developed By Sharad</h5>
+        <br>
+        <ul id="song-list">
+
+        </ul>
+
+        <div id="play-section">
+            <div id="song-name" class="sg-name">Song Name</div>
+            <div id="timestamp">0:00 / 0:00</div>
+            <input type="range" id="progress">
+            <div>  
+                <button id="backward-btn" style="color: yellow;"><i class="fa-solid fa-backward"></i></button>
+                <button id="play-btn" style="color: yellow;"><i class="fa-solid fa-play"></i></button>
+                <button id="forward-btn" style="color: yellow;"><i class="fa-solid fa-forward"></i></button>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
